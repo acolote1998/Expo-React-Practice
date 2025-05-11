@@ -7,23 +7,23 @@ const HomeScreen = ({ navigation }: any) => (
   <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
     <Text>Home Screen</Text>
     <Button
-      title="Go to Profile"
-      onPress={() => navigation.navigate("Profile")}
+      title="Go to My Trips"
+      onPress={() => navigation.navigate("My Trips")}
     />
   </View>
 );
 
 const ProfileScreen = ({ navigation }: any) => (
   <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-    <Text>Profile Screen</Text>
+    <Text>My Trips</Text>
     <Button
-      title="Go to Details"
-      onPress={() => navigation.navigate("Details")}
+      title="Go to Trip Details"
+      onPress={() => navigation.navigate("Trip Details")}
     />
   </View>
 );
 
-const DetailsScreen = () => (
+const TripDetailsScreen = () => (
   <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
     <Text>Details Screen</Text>
   </View>
@@ -35,8 +35,8 @@ const App = () => (
   <NavigationContainer>
     <Stack.Navigator screenOptions={{ headerShown: true }}>
       <Stack.Screen name="Home" component={HomeScreen} />
-      <Stack.Screen name="Profile" component={ProfileScreen} />
-      <Stack.Screen name="Details" component={DetailsScreen} />
+      <Stack.Screen name="My Trips" component={ProfileScreen} />
+      <Stack.Screen name="Trip Details" component={TripDetailsScreen} />
     </Stack.Navigator>
   </NavigationContainer>
 );
