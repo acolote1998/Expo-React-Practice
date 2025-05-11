@@ -25,14 +25,14 @@ const ProfileScreen = ({ navigation }: any) => (
 
 const CordobaScreen = () => (
   <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-    <Text>Cordoba Screen</Text>
+    <Text>Cordoba City</Text>
     <Image source={cordobaImage} />
   </View>
 );
 
 const SaltaScreen = () => (
   <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-    <Text>Salta Screen</Text>
+    <Text>Salta City</Text>
     <Image source={saltaImage} />
   </View>
 );
