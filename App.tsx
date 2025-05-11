@@ -16,16 +16,20 @@ const HomeScreen = ({ navigation }: any) => (
 const ProfileScreen = ({ navigation }: any) => (
   <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
     <Text>My Trips</Text>
-    <Button
-      title="Go to Trip Details"
-      onPress={() => navigation.navigate("Trip Details")}
-    />
+    <Button title="Cordoba" onPress={() => navigation.navigate("Cordoba")} />
+    <Button title="Salta" onPress={() => navigation.navigate("Salta")} />
   </View>
 );
 
-const TripDetailsScreen = () => (
+const CordobaScreen = () => (
   <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-    <Text>Details Screen</Text>
+    <Text>Cordoba Screen</Text>
+  </View>
+);
+
+const SaltaScreen = () => (
+  <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+    <Text>Salta Screen</Text>
   </View>
 );
 
@@ -36,7 +40,8 @@ const App = () => (
     <Stack.Navigator screenOptions={{ headerShown: true }}>
       <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="My Trips" component={ProfileScreen} />
-      <Stack.Screen name="Trip Details" component={TripDetailsScreen} />
+      <Stack.Screen name="Cordoba" component={CordobaScreen} />
+      <Stack.Screen name="Salta" component={SaltaScreen} />
     </Stack.Navigator>
   </NavigationContainer>
 );
